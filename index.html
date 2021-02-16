@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNN</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="page-container">
+    <header class="page-header">
         <div class="container">
             <div class="header-left">
                 <div class="page-logo">
-                    <img src="images/logo_cnn.png" alt="CNN">
+                    <a href="/">
+                        <img src="images/logo_cnn.png" alt="CNN">
+                    </a>
                 </div>
                 <nav class="page-nav">
                     <ul>
@@ -32,16 +35,19 @@
             </div>
             <div class="header-right">
                 <div class="international-edition">
-
+                    <input type="checkbox"  id="international-switcher" hidden>
+                    <label for="international-switcher">International Edition +</label>
                 </div>
                 <div class="page-search">
                     <input type="checkbox" id="search-switcher" hidden>
-                    <input type="search" name="">
-                    <label for="search-switcher">s</label>
+                    <input type="search" class="page-search-field">
+                    <label for="search-switcher" class="search-switcher-label">
+                        <i class="fas fa-search"></i>
+                    </label>
                 </div>
                 <div class="header-expanded-menu">
-                    <input type="checkbox" id="expanded-switcher">
-                    <label for="expanded-switcher">=</label>
+                    <input type="checkbox" id="expanded-switcher" hidden>
+                    <label for="expanded-switcher"><i class="fas fa-bars"></i></label>
                 </div>
             </div>
         </div>
